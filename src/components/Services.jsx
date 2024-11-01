@@ -7,10 +7,10 @@ function Services() {
 
 <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
   <div class="mx-auto mb-12 w-full max-w-3xl text-center md:mb-16 lg:mb-20">
-    <h1 class="mb-4 text-4xl font-semibold md:text-6xl">About 
+    <h1 class="mb-4 text-4xl font-semibold md:text-6xl text-indigo-400">About 
 
       <span class="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/6390526ac2a607693620c97b_Rectangle%2010.svg')] bg-cover bg-center px-4 text-white"> Us </span></h1>
-    <p class="mx-auto mb-5 max-w-[528px] text-xl text-[#636262] lg:mb-8"><h2 className='font-semibold mb-3'>Welcome to Visionary Insights!</h2>
+    <p class="mx-auto mb-5 max-w-[528px] text-xl text-cyan-300 lg:mb-8"><h2 className='font-semibold mb-3'>Welcome to Visionary Insights!</h2>
 
 We create smart tools that help you understand images and answer questions quickly and accurately.
 

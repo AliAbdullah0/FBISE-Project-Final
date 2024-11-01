@@ -57,8 +57,8 @@ function ObjRecognition() {
             context.beginPath();
             context.rect(x, y, width, height);
             context.lineWidth = 2;
-            context.strokeStyle = 'green';
-            context.fillStyle = 'green';
+            context.strokeStyle = 'blue';
+            context.fillStyle = 'blue';
             context.stroke();
             context.fillText(
               `${detection.class} (${(detection.score * 100).toFixed(2)}%)`,
@@ -110,11 +110,11 @@ function ObjRecognition() {
     <div className='flex flex-col items-center w-full gap-3'>
       <div className='mt-3'>
         <h2 className="flex flex-row flex-nowrap items-center">
-          <span className="flex-grow block border-t border-black"></span>
-          <span className="flex-none block mx-4 px-4 py-2.5 text-xl rounded leading-none font-medium bg-sky-500 text-white">
+          <span className="flex-grow block border-t border-white"></span>
+          <span className="flex-none block mx-4 px-4 py-2.5 text-xl rounded leading-none font-medium bg-gradient-to-t from-indigo-400 to-pink-600 text-white">
             Object Recognition
           </span>
-          <span className="flex-grow block border-t border-black"></span>
+          <span className="flex-grow block border-t border-white"></span>
         </h2>
       </div>
       <div className='relative w-[640px] h-[400px] flex items-center justify-center'>
@@ -125,13 +125,13 @@ function ObjRecognition() {
         <div className='border-b-2 border-blue-600 p-2'>
           {responses.length > 0 ? (
             responses.map((res, index) => (
-              <h3 key={index}>
-                <span>The object is </span>
-                <span className='font-semibold'>{`${res.class}`}</span> with confidence: {`${(res.score * 100).toFixed(2)}%`}
+              <h3 key={index} className='text-white'>
+                <span className='text-white'>The object is </span>
+                <span className='font-semibold text-white'>{`${res.class}`}</span> with confidence: {`${(res.score * 100).toFixed(2)}%`}
               </h3>
             ))
           ) : (
-            <h3>No objects detected.</h3>
+            <h3 className='text-white'>No objects detected.</h3>
           )}
         </div>
       </div>

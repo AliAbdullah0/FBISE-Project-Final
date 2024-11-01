@@ -81,14 +81,14 @@ function ImageRecognition() {
       <div className='p-2 flex flex-col'>
         <div className='w-full flex gap-2 flex-col p-2 '>
           <h2 class="flex flex-row flex-nowrap items-center">
-            <span class="flex-grow block border-t border-black"></span>
-            <span class="flex-none block mx-4 px-4 py-2.5 text-xl rounded leading-none font-medium bg-sky-500 text-white">
+            <span class="flex-grow block border-t border-white"></span>
+            <span class="flex-none block mx-4 px-4 py-2.5 text-xl rounded leading-none font-medium bg-gradient-to-r from-indigo-400 to-pink-600 ">
               Image Recognition
             </span>
-            <span class="flex-grow block border-t border-black"></span>
+            <span class="flex-grow block border-t border-white"></span>
           </h2>
           <div className='p-2 flex flex-row items-center gap-2 w-full'>
-            <div class="rounded-md border border-indigo-500 bg-gray-50 p-2 shadow-md ">
+            <div class="rounded-md border p-2 shadow-md ">
               <label for="upload" class="flex flex-col items-center gap-2 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 fill-white stroke-indigo-500" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -100,7 +100,7 @@ function ImageRecognition() {
 
             <span className='font-semibold text-lg'>OR</span>
 
-            <div className="bg-white p-4 rounded-lg">
+            <div className="p-4 rounded-lg">
               <div className="relative bg-inherit">
                 <input type="text" id="username" name="username" className="peer bg-transparent h-10 w-72 rounded-lg text-gray-200 placeholder-transparent ring-2 px-2 ring-gray-500 focus:ring-sky-600 focus:outline-none focus:border-rose-600" placeholder="Type inside me" ref={textInputRef} onChange={handleOnChange} /><label for="username" className="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-inherit mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-sky-600 peer-focus:text-sm transition-all">Type inside me</label>
               </div>

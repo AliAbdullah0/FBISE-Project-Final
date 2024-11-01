@@ -79,7 +79,7 @@ function Gpt() {
   return (
     <div className='mt-5 space-y-3'>
       <h2 className="flex flex-row flex-nowrap items-center justify-center">
-            <span class="flex-none block mx-4 px-4 py-2.5 text-xl rounded leading-none font-medium bg-sky-500 text-white">
+            <span class="flex-none block mx-4 px-4 py-2.5 text-xl rounded leading-none font-medium bg-gradient-to-r from-indigo-400 to-pink-600 ">
               QnA Model
             </span>
           </h2>
@@ -102,10 +102,10 @@ function Gpt() {
           placeholder='Ask Question'
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
-          className='outline-none p-2 rounded-2xl min-w-[30%] border-2 border-gray-100 w-1/5 shadow-sm focus:transition-all focus:shadow-lg focus:-translate-y-1'
+          className='outline-none p-2 rounded-2xl min-w-[30%] border-2 border-indigo-400 bg-transparent w-1/5 shadow-sm focus:transition-all focus:shadow-lg focus:-translate-y-1'
         />
        <div class="flex justify-center">
-              <a href="#" class="mr-5 inline-block rounded-xl bg-black px-4 py-2 text-center font-semibold text-white md:mr-6" onClick={handleQuestionSubmit}>Find</a>
+              <a href="#" class="mr-5 inline-block rounded-xl bg-indigo-400 px-4 py-2 text-center font-semibold text-white md:mr-6" onClick={handleQuestionSubmit}>Find</a>
             </div>
         </div>
         {

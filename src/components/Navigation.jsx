@@ -7,7 +7,7 @@ function Navigation() {
   return (
     <>
       {/* NAVIGATION */}
-      <div className='animate-wiggle '>
+      <div className='m-0 p-0 bg-black'>
         {/* Mobile navigation */}
         <div className='flex w-full p-2 justify-between items-center md:hidden '>
           <div>
@@ -40,7 +40,7 @@ function Navigation() {
         )}
 
         {/* Desktop navigation */}
-        <div className='hidden md:flex p-2 items-center justify-between min-h-16 w-[80%] m-auto bg-blue-100 mt-2 rounded-2xl'>
+        <div className='hidden md:flex p-2 items-center justify-between min-h-16 w-[80%] m-auto bg-black text-pink-400 mt-2 rounded-2xl'>
           <div>
             <Link to='/'>
               <img src="src/assets/Logo AI.png" alt="Logo" className='h-9' />
@@ -49,28 +49,28 @@ function Navigation() {
           <div className='flex gap-2 items-center w-fit'>
             <ul className='flex gap-4'>
               <Link to='/'>
-                <li className='hover:border-blue-600 border-b-2 border-transparent transition duration-150'>Home</li>
+                <li className='hover:border-cyan-400 border-b-2 border-transparent transition duration-150'>Home</li>
               </Link>
 
               {/* Dropdown Navigation */}
-              <div className="relative group">
-                <li className="hover:border-blue-600 border-b-2 border-transparent transition duration-150 cursor-pointer">
+              <div className="relative group z-10">
+                <li className="hover:border-cyan-400 border-b-2 border-transparent transition duration-150 cursor-pointer">
                   Models
                 </li>
-                <div className="absolute opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-150 transform -translate-y-2 shadow-lg tracking-wide bg-blue-50 mt-2">
-                  <ul className="flex flex-col p-2  font-light">
+                <div className="absolute opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-150 transform -translate-y-2 shadow-lg tracking-wide text-black mt-2">
+                  <ul className="flex flex-col p-2 font-light bg-white">
                     <li>
-                      <Link to="/imagerecognition" className="block  px-4 py-2 hover:bg-blue-100 transition border-transparent hover:border-blue-600 border-b-2">
+                      <Link to="/imagerecognition" className="block  px-4 py-2 hover:bg-pink-100 transition border-transparent hover:border-cyan-400 border-b-2">
                         Image Recognition
                       </Link>
                     </li>
                     <li>
-                      <Link to="/objrec" className="block px-4 py-2 hover:bg-blue-100 transition border-transparent hover:border-blue-600 border-b-2">
+                      <Link to="/objrec" className="block px-4 py-2 hover:bg-pink-100 transition border-transparent hover:border-cyan-400 border-b-2">
                         Object Recognition
                       </Link>
                     </li>
                     <li>
-                      <Link to="/gpt" className="block px-4 py-2 hover:bg-blue-100 transition border-transparent hover:border-blue-600 border-b-2">
+                      <Link to="/gpt" className="block px-4 py-2 hover:bg-pink-100 transition border-transparent hover:border-cyan-400 border-b-2">
                         Qna Model
                       </Link>
                     </li>
@@ -79,7 +79,7 @@ function Navigation() {
               </div>
 
               <Link to='services'>
-                <li className='hover:border-blue-600 border-b-2 border-transparent transition duration-150'>About Us</li>
+                <li className='hover:border-cyan-400 border-b-2 border-transparent transition duration-150'>About Us</li>
               </Link>
             </ul>
             <div>
